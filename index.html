@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickethack</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="./index.html" id="logo">Tickethack</a>
+        </div>
+        <div>
+            <a href="./src/cart.html">Cart</a>
+            <a href="./src/bookings.html">Bookings</a>
+        </div>
+    </header>
+    <main>
+        <div id="title-description">
+            <h1>Explore the world efforlessly by train!</h1>
+            <p>Compare, book and enjoy cheap prices for train tickets your journey starts on Tickethack.</p>
+        </div>
+
+        <div id="container-input-result">
+            <div id="bloc-input" class="bloc-input-result">
+                <form action="#">
+                    <div>
+                        <input type="text" placeholder="Departure">
+                        <div id="line-input"></div>
+                        <input type="text" placeholder="Arrival">
+                        <input type="date" value="2022-06-23" class="input-date">
+                    </div>
+                    <button value="Search">Search</button>
+                </form>
+            </div>
+            <div id="bloc-result" class="bloc-input-result">
+                <div class="result">
+                    <img src="./src/images/train.png">
+                    <div id="line"></div>
+                    <p id="description">It's time to book your future trip.</p>
+                </div>
+                <div class="result" id="result-trips" style="display: none;">
+                    <div class="container-element-trips">
+                        <div class="trip">
+                            <p>Paris > Lyon</p>
+                            <p>20:09</p>
+                            <p>103€</p>
+                            <a class="button-book" href="./src/cart.html">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
